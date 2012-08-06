@@ -1,0 +1,31 @@
+\usepackage[brazil]{babel}
+\RequirePackage[utf8,utf8x]{inputenc}
+\usepackage{url}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{subfig}
+\usepackage[dvips,dvipdfm,top=4cm,bottom=-10cm,left=4cm,right=8cm]{geometry}
+
+\renewcommand{\papertype}{custom}
+\renewcommand{\fontpointsize}{25pt}
+
+\setlength{\paperwidth}{90cm}
+\setlength{\paperheight}{120cm}
+\renewcommand{\setpspagesize}{
+  \ifthenelse{\equal{\orientation}{portrait}}{
+    \special{papersize=90cm,120cm}
+    }{\special{papersize=120cm,90cm}
+    }
+  }
+
+\definecolor{SectionCol}{rgb}{1,1,1}
+\definecolor{BoxCol}{rgb}{.230,.230,.76}
+
+\def\abovestrut#1{\rule[0in]{0in}{#1}\ignorespaces}
+\def\belowstrut#1{\rule[-#1]{0in}{#1}\ignorespaces}
+
+\def\abovespace{\abovestrut{0.20in}}
+\def\aroundspace{\abovestrut{0.20in}\belowstrut{0.10in}}
+\def\belowspace{\belowstrut{0.10in}}
+

@@ -1,0 +1,63 @@
+\documentclass{sciposter}
+\usepackage{poster-anppom}
+
+% usar para termos estrangeiros
+\newcommand{\eng}[1]{\textit{#1}}
+
+\title{Taxonomia de Técnicas de Visualização em Música}
+\author{\textbf{Jean Menezes da Rocha, Mara Pinheiro Menezes, Marcos
+    da Silva Sampaio, Natanael Ourives, Dennis Queiroz de Carvalho e
+    Pedro Ribeiro Kröger Júnior}} \institute{Genos---Grupo de pesquisa
+  em computação musical} \email{jean.rudess@gmail.com}
+
+% The following commands can be used to alter the default logo settings
+\leftlogo[.7]{figs/ufba-logo}{  % defines logo to left of title (with scale factor)
+\rightlogo[1.1]{figs/capes-logo}  % same but on right
+
+\begin{document}
+
+\bibliographystyle{plain}
+
+\conference{\Large \textbf{XII Congresso da ANPPOM --- 2012
+    \hfill \textsf{Grupo de Pesquisa: GENOS}}}
+
+\maketitle
+
+\begin{multicols}{3}
+
+\section{Introdução}
+
+\section{Metodologia}
+
+
+\section{Análise}
+
+\end{multicols}
+
+\begin{center}
+\begin{multicols}{2}
+
+\begin{figure}[!h]
+  \centering
+  \caption{Legenda}
+  \label{fig:label-figura}
+\end{figure}
+
+\end{multicols}
+\end{center}
+
+\begin{multicols}{3}
+
+\section{Avaliação}
+
+\section{Conclusão e trabalhos futuros}
+
+\renewcommand{\refname}{Bibliografia}
+
+\nocite{Lengler2007}
+
+\bibliography{bibliography.bib}
+
+\end{multicols}
+
+\end{document}
