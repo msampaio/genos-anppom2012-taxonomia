@@ -11,7 +11,7 @@
   em computação musical} \email{jean.rudess@gmail.com}
 
 % The following commands can be used to alter the default logo settings
-\leftlogo[.7]{figs/ufba-logo}{  % defines logo to left of title (with scale factor)
+\leftlogo[.7]{figs/ufba-logo}{% defines logo to left of title (with scale factor)
 \rightlogo[1.1]{figs/capes-logo}  % same but on right
 
 \begin{document}
@@ -23,34 +23,123 @@
 
 \maketitle
 
-\begin{multicols}{3}
+\begin{multicols}{2}
 
 \section{Introdução}
 
-\section{Metodologia}
+A visualização de informações tem auxiliado para o aumento da compreensão de
+dados complexos em diversas áreas como estatística, estudos sociais, e música.
+A visualização de dados em música pode abranger uma gama ampla de tópicos como
+fuga, forma, contraponto, série dodecafônica, escalas, harmonia, e conjuntos de
+notas, beneficiando leigos e profissionais e trazendo consigo potenciais
+contribuições tanto a processos educacionais quanto a atividades terminais de
+análise musical. Ainda assim, estudos mais rigorosos sobre a eficiência da
+visualização não tem sido feitos e menos variáveis e mais objetivos os poucos
+estudos indicam que a visualização pode auxiliar estudantes a aprender melhor o
+material estudado.  Nosso objetivo neste trabalho é levantar formas mais
+concretas e práticas de Visualização em Música. Dessa forma decidimos propor
+uma taxonomia do que já tem sido implementado com tal finalidade.
+
+\section{A ``Tabela Periódica de Métodos de Visualização''}
+
+%A classificação aqui proposta está fundamentada primariamente na representação
+%de Lengler e Eppler (2007), cuja apresentação completa e interativa pode ser
+%visualizada em
+%\url{http://www.visual-literacy.org/periodic_table/periodic_table.html}. Tal
+%representação faz proveito da tradicional estrutura da Tabela Periódica de
+%elementos químicos de Mendeleev para agrupar e segmentar os diversos métodos de
+%Visualização nas categorias de Visualização de Dados, de Informação, de
+%Conceitos, de Metáforas, de Estratégias e Visualização Composta. Além dessas
+%seis categorias maiores, Lengler e Eppler também atribuem características aos
+%diversos “elementos” (técnicas), assinalando cada um deles como visualização de
+%processos ou visualização de estruturas; visão geral e/ou visão detalhada; e
+%pensamento convergente ou pensamento divergente. 
+
+%Tendo em vista esta taxonomia abrangente quanto ao campo da Visualização em
+%geral, relacionamos cada técnica que tenha sido aplicada à Música ao lugar que
+%ocupariam de acordo com a categorização encontrada na Tabela Periódica acima
+%referida. Essa “classificação cruzada” serve aos propósitos de: a) avaliar a
+%variedade e abrangência das técnicas de Visualização em Música disponíveis; b)
+%visualizar a distribuição/concentração de cada técnica em áreas específicas da
+%Tabela; c) avaliar a necessidade de contribuições para a inserção de técnicas e
+%nomenclaturas não cobertas pela Taxonomia usada como parâmetro.
+
+\section{Levantamento de técnicas de Visualização em Música}
+
+O levantamento de técnicas consistiu em uma coleta bibliográfica, observação
+das descrições de cada técnica trabalhada e catalogação da terminologia
+relevante para o tema da pesquisa. As técnicas levantadas foram Visualização em
+tempo real, Análise Harmônica, Análise Melódica, Visualização Preditiva,
+Visualização de Coleções Musicais, e finalmente Ambientes integrados de edição
+e visualização.
+
+\subsection{Visualização em tempo real}
+
+\subsection{Análises harmônica e melódica}
+
+\subsection{Visualização preditiva}
+
+\subsection{Visualização de coleções musicais}
+
+\subsection{Ambientes integrados de edição e visualização}
 
 
-\section{Análise}
+%\end{multicols}
 
-\end{multicols}
+%\begin{center}
+%\begin{multicols}{2}
 
-\begin{center}
-\begin{multicols}{2}
+%\begin{figure}[!h]
+  %\centering
+  %\caption{Legenda}
+  %\label{fig:label-figura}
+%\end{figure}
 
-\begin{figure}[!h]
-  \centering
-  \caption{Legenda}
-  \label{fig:label-figura}
-\end{figure}
+%\end{multicols}
+%\end{center}
 
-\end{multicols}
-\end{center}
-
-\begin{multicols}{3}
-
-\section{Avaliação}
+%\begin{multicols}{3}
 
 \section{Conclusão e trabalhos futuros}
+
+A partir da coleta de informações, e de sua subsequente associação à taxonomia
+de Lengler e Eppler constatamos que:
+
+\begin{enumerate}
+\item Todas as técnicas de Visualização pesquisadas possuíam ao menos uma das
+propriedades associada à citada Tabela Periódica.
+\item As técnicas investigadas concentram-se majoritariamente no campo de
+Visualização de Informação, com um número significativo de técnicas também
+situadas no campo de Visualização de Dados.
+\item Os estudos de Visualização em Música estão mais focados com materiais e
+instruções concretas e objetivas do que com procedimentos com maior nível de
+abstração. Um possível indicativo é a presença de técnicas nos campos de
+Visualização Composta e de Conceitos, e a ausência de técnicas em Visualização
+de Metáforas e de Estratégias.
+\item A avaliação objetiva de cada ferramenta apresentada ficou prejudicada pelo
+fato de que nenhuma destas estava disponível para uso e/ou testes pelo público
+em geral. A única fonte de pesquisa disponível consiste de artigos descritivos
+das funções de cada ferramenta, mas não há versões acessíveis ou código-fonte
+divulgado em quaisquer repositórios.
+\end{enumerate}
+
+Com esse trabalho observamos que a Taxonomia, a princípio comparativa, é um
+ponto de partida determinante para a consolidação da Visualização em Música
+como campo de estudo. No entanto é necessário verificar se a Visualização em
+Música deve aderir aos princípios técnicos gerais da Visualização em caráter
+permanente. A Visualização em Música ainda carece de técnicas para analisar
+procedimentos em vez de materiais. Logo, deve-se considerar a hipótese de
+surgimento de novas demandas técnicas ainda não cobertas pelos princípios mais
+genéricos contemplados por esta taxonomia.
+
+Além disso, não menos importante é a constatação de que as técnicas catalogadas
+até agora parecem encerrar suas atividades apenas no âmbito de objetivos
+parciais e práticas imediatas, sem necessariamente gerar uma contribuição
+efetivamente compartilhada com a comunidade interessada. Para além de
+relatórios sobre procedimentos arquivados de modo inacessível, entende-se como
+fundamental a criação de ferramentas que possam ser disponibilizadas
+publicamente, em condições de serem utilizadas por um grupo mais amplo de
+pessoas -- mesmo aquelas que estejam fora de grupos e instituições acadêmicas.
 
 \renewcommand{\refname}{Bibliografia}
 
